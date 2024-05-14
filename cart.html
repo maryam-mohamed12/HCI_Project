@@ -1,0 +1,245 @@
+<html>
+
+<head>
+    <title>Shopping Cart</title>
+    <meta name="viewport" content="width=device-width, intial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Lato:wght@100;300;400;700;900&family=Lobster&family=MonteCarlo&family=Raleway:ital,wght@1,100;1,400;1,600&display=swap">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet"href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Lato:wght@100;300;400;700;900&family=Lobster&family=MonteCarlo&family=Oswald:wght@200;300;400;600&family=Raleway:ital,wght@1,100;1,400;1,600&display=swap">
+
+</head>
+
+<body>
+    <!-------------------------header------------------------->
+    <section>
+        <!----nav bar---->
+        <div id="bar">
+        <div class="bar">
+            <div class="logo">
+                <img src="images/logo.png" width="150px">
+            </div>
+            <nav id="navLinks">
+                <i class="fa fa-xmark" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="shop.html">Shop</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="login.html">Pages</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="tools">
+                <i class="fa fa-magnifying-glass"></i>
+                <a href="cart.html"><i style="color: #384aeb;" class="fa fa-cart-shopping"></i></a>
+                <a href="shop.html" class="light-btn">Buy Now</a>
+                <i class="fa fa-bars responsive-ico" onclick="showMenu()"></i>
+            </div>
+        </div>
+    </div>
+    </section>
+
+
+
+    <!-------------------------------------cart----------------------------------------->
+    <section class="container">
+        <table>
+            <thead>
+                <tr>
+                    <th style=" width: 60%;">
+                        <h2>Product</h2>
+                    </th>
+                    <!---->
+                    <th style=" width: 15%;">
+                        <h2>Price</h2>
+                    </th>
+                    <th style=" width: 20%;">
+                        <h2>Quantity</h2>
+                    </th>
+                    <th>
+                        <h2>Total</h2>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <img src="images/cart/cart1.png">
+                        <p>Minimalistic shop for multipurpose use</p>
+                    </td>
+                    <td>$360.00</td>
+                    <td><input type="number" value="1"></td>
+                    <td>$720.00</td>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="images/cart/cart2.png">
+                        <p>Minimalistic shop for multipurpose use</p>
+                    </td>
+                    <td>$360.00</td>
+                    <td><input type="number" value="1"></td>
+                    <td>$720.00</td>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="images/cart/cart3.png">
+                        <p>Minimalistic shop for multipurpose use</p>
+                    </td>
+                    <td>$360.00</td>
+                    <td><input type="number" value="1"></td>
+                    <td>$720.00</td>
+                </tr>
+                <tr>
+                    <!----------buttens & inputs row------------>
+                    <td colspan="4" class="colspan">
+                        <a href="" class="light-btn" id="cart">Update Cart</a>
+                        <div class="coupon">
+                            <input type="text" class="textinput" placeholder="Coupon Code" name="coupon code">
+                            <a href="#" class="apply">Apply</a>
+                            <a href="#" class="light-btn" id="cart">Have a Coupon?</a>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td>Subtotal</td>
+                    <td>$2160.00</td>
+                </tr>
+                <tr>
+                    <!--------------------radio & select row-------------------->
+                    <td colspan="4" style="text-align: end">
+                        <!--xxx-->
+                        <label>Shipping</label>
+                        <div class="shipping">
+                            <label>Flat Rate : $5.00</label>
+                            <input type="radio">
+                        </div>
+                        <div class="shipping">
+                            <label>Free Shipping</label>
+                            <input type="radio">
+                        </div>
+                        <div class="shipping">
+                            <label>Flat Rate : $10.00</label>
+                            <input type="radio">
+                        </div>
+                        <div class="shipping">
+                            <label>Local Delivery: $2.00</label>
+                            <input type="radio" checked>
+                        </div>
+                        <h2>Calcuate shipping <i class="fa-solid fa-caret-down"></i></h2>
+                        <select class="select">
+                            <option>Egypt</option>
+                        </select>
+                        <br>
+                        <select class="select">
+                            <option>Select a State</option>
+                        </select>
+                        <br>
+                        <input type="text" class="select" placeholder="PostCode / ZipCode">
+                        <br>
+                        <a href="" class="light-btn" id="cart">Update Details</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="4" class="colspan">
+                        <div class="coupon">
+                            <a href="shop.html" class="light-btn" id="cart">Containue shopping</a>
+                            <a href="#" class="apply">Proceed To Checkout</a>
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+    </section>
+
+
+
+    <!----------------------------------footer---------------------------------------------->
+    <section class="footer" id="foot" style="height: auto;">
+        <div class="content" id="content">
+            <!---mission--->
+            <div class="mission">
+                <h5>Our Mission</h5>
+                <p>So seed seed green that winged cattle in. Gathering thing made fly you're no divided deep moved us
+                    lan
+                    Gathering thing us land years living.
+                    <br><br>
+                    So seed seed groon that winged care in Gathering thing made fly you're no divided deep moved
+                </p>
+            </div>
+            <!---quick link--->
+            <div class="quick-links">
+                <h5>Quick Links</h5>
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="shop.html">Shop</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="">Product</a></li>
+                    <li><a href="">Brand</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <!---gallery--->
+            <div class="gallery">
+                <h5>Gallery</h5>
+                <img src="images/gallery/r1.jpg">
+                <img src="images/gallery/r2.jpg">
+                <img src="images/gallery/r3.jpg">
+                <img src="images/gallery/r5.jpg">
+                <img src="images/gallery/r7.jpg">
+                <img src="images/gallery/r8.jpg">
+            </div>
+            <!---contact us--->
+            <div>
+                <h5>Contact Us</h5>
+                <div class="communicate">
+                    <i class="fa-solid fa-paper-plane"></i>
+                    <div>
+                        <p style="color: #fff;">Head Office</p>
+                        <p>123, Main Street, London</p>
+                    </div>
+                </div>
+                <div class="communicate">
+                    <i class="fa-solid fa-phone-flip"></i>
+                    <div>
+                        <p style="color: #fff;">Phone Number</p>
+                        <p>+123 456 7890</p>
+                        <p>+123 456 7890</p>
+                    </div>
+                </div>
+                <div class="communicate">
+                    <i class="fa-solid fa-envelope"></i>
+                    <div>
+                        <p style="color: #fff;">Email</p>
+                        <p>free@infoexample.com</p>
+                        <p>www.infoexample.com</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+        <!------javaScript------>
+        <script>
+            var navLinks = document.getElementById("navLinks")
+            function showMenu() {
+                navLinks.style.right = "0"
+            }
+            function hideMenu() {
+                navLinks.style.right = "-200px"
+            }
+        </script>
+
+</body>
+
+</html>

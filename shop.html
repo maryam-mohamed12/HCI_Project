@@ -1,0 +1,430 @@
+<html>
+
+<head>
+    <title>Shop Category</title>
+    <meta name="viewport" content="width=device-width, intial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;600&family=Lato:wght@100;300;400;600;900&family=Lobster&family=MonteCarlo&family=Raleway:ital,wght@1,100;1,400;1,600&display=swap">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet"href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;600&family=Lato:wght@100;300;400;600;900&family=Lobster&family=MonteCarlo&family=Oswald:wght@200;300;400;600&family=Raleway:ital,wght@1,100;1,400;1,600&display=swap">
+
+</head>
+
+<body>
+    <!-------------------------header------------------------->
+    <!-------------------------header------------------------->
+    <section>
+        <!----nav bar---->
+        <div id="bar">
+        <div class="bar">
+            <div class="logo">
+                <img src="images/logo.png" width="150px">
+            </div>
+            <nav id="navLinks">
+                <i class="fa fa-xmark" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="shop.html" class="active">Shop</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="login.html">Pages</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="tools">
+                <i class="fa fa-magnifying-glass"></i>
+                <a href="cart.html"><i class="fa fa-cart-shopping"></i></a>
+                <a href="" class="light-btn">Buy Now</a>
+                <i class="fa fa-bars responsive-ico" onclick="showMenu()"></i>
+            </div>
+        </div>
+    </div>
+        
+    </section>
+
+
+
+
+
+
+    <!----------------------------------------aside---------------------------------------------->
+    <section class="aside-container">
+        <!------------------------aside part------------------------->
+        <div>
+            <!----------short aside---------->
+            <div class="aside">
+                <h5>Browse Categories</h5>
+                <div class="shipping">
+                    <input type="radio">
+                    <label>Men (3600)</label>
+                </div>
+                <div class="shipping">
+                    <input type="radio">
+                    <label>Women (3600)</label>
+                </div>
+                <div class="shipping">
+                    <input type="radio">
+                    <label>Accessories (3600)</label>
+                </div>
+                <div class="shipping">
+                    <input type="radio">
+                    <label>Footwear (3600)</label>
+                </div>
+                <div class="shipping">
+                    <input type="radio">
+                    <label>Bay item (3600)</label>
+                </div>
+                <div class="shipping">
+                    <input type="radio">
+                    <label>Electronics (3600)</label>
+                </div>
+                <div class="shipping">
+                    <input type="radio">
+                    <label>Food (3600)</label>
+                </div>
+            </div>
+            <!-------------tall aside--------------->
+            <div class="aside">
+                <h5>Product Filters</h5>
+                <!-----brands----->
+                <p>Brands</p>
+                <div class="shipping">
+                    <input type="radio">
+                    <label>Apple (29)</label>
+                </div>
+                <div class="shipping">
+                    <input type="radio">
+                    <label>Asios (29)</label>
+                </div>
+                <div class="shipping">
+                    <input type="radio">
+                    <label>Gionee (19)</label>
+                </div>
+                <div class="shipping">
+                    <input type="radio">
+                    <label>Micromax (19)</label>
+                </div>
+                <div class="shipping">
+                    <input type="radio">
+                    <label>Smasong (19)</label>
+                </div>
+                <!--------color-------->
+                <hr style="opacity: 0.2;">
+                <p>Color</p>
+                <div class="shipping">
+                    <input type="radio">
+                    <label>Black (29)</label>
+                </div>
+                <div class="shipping">
+                    <input type="radio">
+                    <label>Black Leather (29)</label>
+                </div>
+                <div class="shipping">
+                    <input type="radio">
+                    <label>Black with Red (19)</label>
+                </div>
+                <div class="shipping">
+                    <input type="radio">
+                    <label>Gold (19)</label>
+                </div>
+                <div class="shipping">
+                    <input type="radio">
+                    <label>Spacegrey (19)</label>
+                </div>
+                <!--------price-------->
+                <hr style="opacity: 0.2;">
+                <p>Price</p>
+                <input type="range">
+                <p class="price-range">Price: $500.00 &nbsp;<small>to</small>&nbsp; $4000.00</p>
+            </div>
+        </div>
+        <!------------------------------product part----------------------------->
+        <div>
+            <div class="control">
+                <div>
+                    <select>
+                        <option>Default Sorting</option>
+                        <option>Order by price</option>
+                        <option>Order by popularity</option>
+                        <option>Order by rating</option>
+                        <option>Order by sale</option>
+                    </select>
+                    <select>
+                        <option>Show 12</option>
+                    </select>
+                </div>
+                <div>
+                    <input type="text" placeholder="Search">
+                    <i class="fa fa-magnifying-glass"></i>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-4">
+                    <a href="shop single.html">
+                        <img src="images/p1.jpg"style="height: 280px; width: 263px;">
+                    </a>
+                    <p>Accessories</p>
+                    <h2>Smart Watch</h2>
+                    <h3>$550.00</h3>
+                </div>
+                <div class="col-4">
+                    <a href="">
+                        <img src="images/p2.jpg" style="height: 280px; width: 263px;">
+                    </a>
+                    <p>Phone</p>
+                    <h2>iphon xs-max</h2>
+                    <h3>$1500.00</h3>
+                </div>
+                <div class="col-4">
+                    <a href="">
+                        <img src="images/p3.jpg" style="height: 280px; width: 263px;">
+                    </a>
+                    <p>Accessories</p>
+                    <h2>Speakers</h2>
+                    <h3>$350.00</h3>
+                </div>
+                <div class="col-4">
+                    <a href="">
+                        <img src="images/p4.jpg"style="height: 280px; width: 263px;">
+                    </a>
+                    <p>Accessories</p>
+                    <h2>Headphones</h2>
+                    <h3>$450.00</h3>
+                </div>
+                <div class="col-4">
+                    <a href="">
+                        <img src="images/product/product6.png">
+                    </a>
+                    <p>Accessories</p>
+                    <h2>Charging Car</h2>
+                    <h3>$150.00</h3>
+                </div>
+                <div class="col-4">
+                    <a href="">
+                        <img src="images/product/product7.png">
+                    </a>
+                    <p>Accessories</p>
+                    <h2>Blutooth Speaker</h2>
+                    <h3>$150.00</h3>
+                </div>
+                <div class="col-4">
+                    <a href="">
+                        <img src="images/product/product8.png">
+                    </a>
+                    <p>Accessories</p>
+                    <h2>Charger</h2>
+                    <h3>$150.00</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+    <!-----------------------------------top product------------------------------------------>
+    <section class="container">
+        <p>Popular Item in the market</p>
+        <h1 class="title">Top <span>Product</span></h1>
+        <div class="row">
+            <div class="top animate glow delay-1">
+                <div class="small-container">
+                    <img src="images/p5.jpg" style="height: 60px;width: 60px;">
+                    <div>
+                        <h2>Accessories</h2>
+                        <h3>$160.00</h3>
+                    </div>
+                </div>
+                <div class="small-container">
+                    <img src="images/p6.jpg" style="height: 60px;width: 60px;">
+                    <div>
+                        <h2>Accessories</h2>
+                        <h3>$160.00</h3>
+                    </div>
+                </div>
+                <div class="small-container">
+                    <img src="images/p7.jpg" style="height: 60px;width: 60px;">
+                    <div>
+                        <h2>Accessories</h2>
+                        <h3>$160.00</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="top animate glow delay-2">
+                <div class="small-container">
+                    <img src="images/p5.jpg" style="height: 60px;width: 60px;">
+                    <div>
+                        <h2>Accessories</h2>
+                        <h3>$160.00</h3>
+                    </div>
+                </div>
+                <div class="small-container">
+                    <img src="images/p6.jpg" style="height: 60px;width: 60px;">
+                    <div>
+                        <h2>Accessories</h2>
+                        <h3>$160.00</h3>
+                    </div>
+                </div>
+                <div class="small-container">
+                    <img src="images/p7.jpg" style="height: 60px;width: 60px;">
+                    <div>
+                        <h2>Accessories</h2>
+                        <h3>$160.00</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="top animate glow delay-3">
+                <div class="small-container">
+                    <img src="images/p5.jpg" style="height: 60px;width: 60px;">
+                    <div>
+                        <h2>Accessories</h2>
+                        <h3>$160.00</h3>
+                    </div>
+                </div>
+                <div class="small-container">
+                    <img src="images/p6.jpg" style="height: 60px;width: 60px;">
+                    <div>
+                        <h2>Accessories</h2>
+                        <h3>$160.00</h3>
+                    </div>
+                </div>
+                <div class="small-container">
+                    <img src="images/p7.jpg" style="height: 60px;width: 60px;">
+                    <div>
+                        <h2>Accessories</h2>
+                        <h3>$160.00</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="top animate glow delay-4">
+                <div class="small-container">
+                    <img src="images/p5.jpg" style="height: 60px;width: 60px;">
+                    <div>
+                        <h2>Accessories</h2>
+                        <h3>$160.00</h3>
+                    </div>
+                </div>
+                <div class="small-container">
+                    <img src="images/p6.jpg" style="height: 60px;width: 60px;">
+                    <div>
+                        <h2>Accessories</h2>
+                        <h3>$160.00</h3>
+                    </div>
+                </div>
+                <div class="small-container">
+                    <img src="images/p7.jpg" style="height: 60px;width: 60px;">
+                    <div>
+                        <h2>Accessories</h2>
+                        <h3>$160.00</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!----------------------------------footer---------------------------------------------->
+    <section class="footer">
+        <!---subscribe--->
+        <div class="subscribe">
+            <h4>GET UPDATE FROM ANYWHERE</h4>
+            <p>Bearing Void gethering light light his eavening unto dont afraid</p>
+            <input type="email" name="email" placeholder="Enter your email">
+            <a href="" class="btn">Subscribe Now</a>
+        </div>
+        <div class="content">
+            <!---mission--->
+            <div class="mission">
+                <h5>Our Mission</h5>
+                <p>So seed seed green that winged cattle in. Gathering thing made fly you're no divided deep moved us
+                    lan
+                    Gathering thing us land years living.
+                    <br><br>
+                    So seed seed groon that winged care in Gathering thing made fly you're no divided deep moved
+                </p>
+            </div>
+            <!---quick link--->
+            <div class="quick-links">
+                <h5>Quick Links</h5>
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="shop.html">Shop</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="">Product</a></li>
+                    <li><a href="">Brand</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <!---gallery--->
+            <div class="gallery">
+                <h5>Gallery</h5>
+                <img src="images/p5.jpg" style="height:60px; width: 60px;">
+                <img src="images/p1.jpg" style="height: 60px; width: 60px;">
+                <img src="images/p2.jpg" style="height: 60px; width: 60px;">
+                <img src="images/p4.jpg" style="height: 60px; width: 60px;">
+                <img src="images/p3.jpg" style="height: 60px; width: 60px;">
+                <img src="images/p7.jpg" style="height: 60px; width: 60px;">
+            </div>
+            <div>
+                <h5>Contact Us</h5>
+                <div class="communicate">
+                    <i class="fa-solid fa-paper-plane"></i>
+                    <div>
+                        <p style="color: #fff;">Head Office</p>
+                        <p>123, Main Street, London</p>
+                    </div>
+                </div>
+                <div class="communicate">
+                    <i class="fa-solid fa-phone-flip"></i>
+                    <div>
+                        <p style="color: #fff;">Phone Number</p>
+                        <p>+123 456 7890</p>
+                        <p>+123 456 7890</p>
+                    </div>
+                </div>
+                <div class="communicate">
+                    <i class="fa-solid fa-envelope"></i>
+                    <div>
+                        <p style="color: #fff;">Email</p>
+                        <p>free@infoexample.com</p>
+                        <p>www.infoexample.com</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+        <!------javaScript------>
+        <script>
+            var navLinks = document.getElementById("navLinks")
+            function showMenu() {
+                navLinks.style.right = "0"
+            }
+            function hideMenu() {
+                navLinks.style.right = "-200px"
+            }
+        </script>
+</body>
+
+</html>
